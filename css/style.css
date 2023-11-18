@@ -39,7 +39,7 @@
 }
 
 .img-box img {
-  height: 21vw;
+  height: 20rem;
 }
 
 .home-page button {
@@ -182,7 +182,7 @@
   display: block;
   opacity: 1;
 }
-
+/* 
 @media (max-width: 768px) {
   .home-page .img-box {
     flex-direction: column;
@@ -195,4 +195,4 @@
   .img-box img {
     height: 10rem;
   }
-}
+} */

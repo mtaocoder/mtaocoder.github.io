@@ -11,21 +11,21 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f7f0e6;
-    min-width: 768px;
   }
 
 .container {
     margin-top: 64px;
-    width: 70vw;
+    width: 90rem;
+    /* width: 70vw; */
     /* background-color: #fff; */
 }
 
 .title {
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
     border-bottom: 1px solid #dcdee3;
-    padding: 35px 10px 20px 10px;
+    padding: 2rem 10rem 5rem 11rem;
 }
 
 .title .left-inner {
@@ -36,15 +36,16 @@ body {
 
 .title .right-inner {
     flex: 4;
-    margin-left: 5vw;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .right-inner .ri-p {
+    padding-top: 1rem;
     border-bottom: 1px solid #dcdee3;
-    display: flex;
+    /* display: flex; */
 }
 
 .right-inner span {
@@ -67,8 +68,7 @@ body {
 .detail {
     width: 100%;
     display: flex;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding: 1rem 13rem 3rem 10rem;
 }
 
 .detail .left-container {
@@ -79,14 +79,14 @@ body {
 
 .left-container .nav-box {
     position: absolute;
-    right: 1vw;
+    right: 1rem;
 }
 
-.left-container .navboxFixed {
+/* .left-container .navboxFixed {
     position: fixed;
     top: 10vh;
-    right: 69.2vw;
-}
+    right: 73rem;
+} */
 
 .nav-box a {
     text-decoration: none;
@@ -98,7 +98,7 @@ body {
 
 .detail .tab-items {
     flex: 6;
-    margin-left: 5vw;
+    margin-left: 5rem;
 }
 
 .tab-items p, .tab-items li, .descript-inner p {

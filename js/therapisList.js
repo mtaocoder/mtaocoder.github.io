@@ -1,7 +1,7 @@
 let datas = structuredClone(therapists)
 let newTherapists = []
 function appendItem(item) {
-    return "<li class='therapist-item'><a href='./profile.html?key="+item.key+"' class='avatar' style='background-image: url("+item.avatar+");'></a><ul><li><a href='./profile.html?key="+item.key+"'>"+item.name+"</a><span></span><span>咨询方式："+item.mode.join('/')+"</span><span>咨询经验："+item.experience+"</span><span>"+item.city+"</span></li><li><span>"+item.info+"</span></li><li><span><span style='margin-right: 0;color: #ffa202;'>￥"+item.price+"</span>"+item.pricetime+"</span></li></ul><a href='./profile.html?key="+item.key+"' class='detail'><button>详细信息</button></a></li>"
+    return "<li class='therapist-item'><a href='./profile.html?key="+item.key+"' class='avatar' style='background-image: url("+item.avatar+");'></a><ul><li><a href='./profile.html?key="+item.key+"'>"+item.name+"</a><span></span><li class='locafa'><span>咨询方式："+item.mode.join('/')+"</span><span>咨询经验："+item.experience+"</span><span class='loca'>"+(item.city[0]==="海外"?item.city[1]:item.city)+"</span></li></li><li><span>"+item.info+"</span></li><li><span><span style='margin-right: 0;color: #ffa202;'>￥"+item.price+"</span>"+item.pricetime+"</span></li></ul><a href='./profile.html?key="+item.key+"' class='detail'><button>详细信息</button></a></li>"
 }
 
 window.onload = function () {
@@ -60,7 +60,7 @@ window.onload = function () {
                 search.push(actives[index].childNodes[0].innerHTML)
             }
             function isRight(data) {
-                if ((search[3] === '全部' || data.gender === search[3]) && (search[1] === '全部城市' || data.city === search[1]) && (search[2] === '全部' || data.mode.indexOf(search[2]) !== -1) && (search[0] === '全部类别' || data.major.indexOf(search[0]) !== -1 )) {
+                if ((search[3] === '全部' || data.gender === search[3]) && (search[1] === '全部城市' || data.city.indexOf(search[1]) !== -1) && (search[2] === '全部' || data.mode.indexOf(search[2]) !== -1) && (search[0] === '全部类别' || data.major.indexOf(search[0]) !== -1 )) {
                     return true
                 }
             }

@@ -12,6 +12,7 @@ body {
   font-family: 'Muli', sans-serif;
   color: #153d61;
   background-color: #f7f0e6;
+  min-width: 1000px;
 }
 
 h1 {
