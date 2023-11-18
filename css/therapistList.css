@@ -23,6 +23,24 @@ body {
     width: 22rem;
 }
 
+.right-box a {
+    position: relative;
+}
+
+.right-box a img {
+    display: none;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.right-box a:hover img {
+    display: block;
+    opacity: 1;
+}
+
 
 /* 筛选器 */
 .select-tab {
